@@ -1,0 +1,65 @@
+/* assets/styles.css
+   Styles for Abbot Sambulo Mtongana — resume site
+*/
+:root{
+  --bg: #f4f7f8;
+  --card: #ffffff;
+  --accent: #2980b9;
+  --accent-2: #5aa9e6;
+  --muted: #6b7280;
+  --text: #1f2937;
+  --meta: #9aa3ad;
+  --max-width: 900px;
+  --gap: 18px;
+  --radius: 8px;
+  --radius-sm: 6px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  --sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  font-size:16px;
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+:focus{outline:3px solid #cfe9ff;outline-offset:3px;border-radius:4px}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;width:auto;height:auto;padding:8px;background:#fff;border:1px solid #ccc;z-index:1000}
+.container{max-width:var(--max-width);margin:28px auto;background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:var(--shadow)}
+header{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+.avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#eaf6ff,#f4fbff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:1.6rem;flex:0 0 84px}
+.info{flex:1;min-width:0}
+.name{font-size:1.4rem;color:var(--accent);font-weight:700;margin:0}
+.tagline{margin:6px 0 0 0;color:var(--muted);font-size:0.95rem}
+.contact{font-size:0.95rem;color:var(--muted);margin:6px 0 0 0}
+.inline{color:var(--accent);text-decoration:none}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-block;padding:8px 12px;border-radius:6px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;border:0;cursor:pointer}
+.btn.secondary{background:#e6eef6;color:var(--accent);border:1px solid #d5e8f8}
+.two-col{display:grid;grid-template-columns:1fr 320px;gap:var(--gap)}@media (max-width:880px){ .two-col{grid-template-columns:1fr} }
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,251,252,0.98));padding:14px;border-radius:var(--radius-sm);border:1px solid rgba(18,66,96,0.02)}
+section{margin-bottom:16px}h2{font-size:1.05rem;margin:0 0 10px 0;color:#13314a}p, li{margin:0 0 8px 0;color:var(--text)}ul{padding-left:20px;margin:0}
+.job-title{font-weight:600;color:var(--accent)}
+.job-details{font-size:0.9rem;color:var(--muted);font-style:italic;margin-bottom:8px}
+.meta{font-size:0.85rem;color:var(--muted)}
+.skills-list{display:flex;flex-direction:column;gap:8px}
+.skill{display:flex;flex-direction:column;gap:4px}
+.skill .label{display:flex;justify-content:space-between;font-size:0.9rem;color:var(--muted)}
+.bar{height:8px;background:#e6eef6;border-radius:6px;overflow:hidden}
+.bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent), var(--accent-2))}
+.projects-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:0}@media (max-width:720px){ .projects-list{grid-template-columns:1fr} }
+.project{display:flex;gap:10px;align-items:flex-start;padding:8px;border-radius:6px;background:#fbfdff;border:1px solid #eef6fb}
+.project .thumb{width:72px;height:48px;background:#e6f2fb;border-radius:6px;flex:0 0 72px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+.contact-form label{display:block;margin:6px 0 4px 0;font-size:0.9rem;color:var(--muted)}
+.contact-form input,.contact-form textarea{width:100%;padding:8px;border:1px solid #d5dbe0;border-radius:6px;margin-bottom:8px;font-family:var(--sans)}
+.contact-form button{margin-top:4px}
+.footer{text-align:center;font-size:0.8rem;color:var(--meta);margin-top:20px}
+@media print{.actions, .skip-link, .contact-form button, .btn.secondary, .footer {display:none}body *{visibility:visible}.container{box-shadow:none;border-radius:0;padding:0}a::after{content: " (" attr(href) ")";font-size:0.9em}}
+.center{text-align:center}.muted{color:var(--muted)}.small{font-size:0.9rem}img, .thumb{max-width:100%;height:auto;display:block}
