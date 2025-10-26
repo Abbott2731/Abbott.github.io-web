@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abbot Sambulo Mtongana — AI Software Developer Resume</title>
+  <meta name="description" content="Resume of Abbot Sambulo Mtongana — AI Software Developer. Skills: HTML, CSS, JavaScript, Python, AI/ML basics, IT & networking." />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Abbot Sambulo Mtongana — AI Software Developer" />
+  <meta property="og:description" content="AI-focused developer transitioning from IT and operations. Skills: Web, Python, prompt engineering, automation." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://your-abbott.github.io/" />
+  <meta property="og:image" content="https://your-abbott.github.io/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD structured data (Person / Resume) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abbot Sambulo Mtongana",
+    "jobTitle": "AI Software Developer",
+    "telephone": "+27766570772",
+    "email": "sammtongana@gmail.com",
+    "url": "https://your-abbott.github.io/",
+    "sameAs": [
+      "https://github.com/Abbott2731",
+      "https://www.linkedin.com/in/REPLACE-LINKEDIN"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Birnam Business College"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts (Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f4f7f8;
+      --card:#ffffff;
+      --accent:#2980b9;
+      --muted:#6b7280;
+      --text:#1f2937;
+      --max-width:900px;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);}
+    a{color:var(--accent)}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px;background:#fff;border:1px solid #ccc;z-index:1000}
+    .container{
+      max-width:var(--max-width);
+      margin:28px auto;
+      background:var(--card);
+      padding:28px;
+      border-radius:8px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.08);
+    }
+    header{display:flex;gap:16px;align-items:center;margin-bottom:12px}
+    .avatar{
+      width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#eaf6ff,#f4fbff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:1.6rem;
+      flex:0 0 84px;
+    }
+    .info{flex:1;min-width:0}
+    .name{font-size:1.4rem;color:var(--accent);font-weight:700;margin:0}
+    .tagline{margin:6px 0 0 0;color:var(--muted);font-size:0.95rem}
+    .contact{font-size:0.95rem;color:var(--muted);margin:6px 0 0 0}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:var(--gap);}
+    @media (max-width:880px){ .two-col{grid-template-columns:1fr;}}
+    section{margin-bottom:16px}
+    h2{font-size:1.05rem;margin:0 0 10px 0;color:#13314a}
+    p, li{line-height:1.45;margin:0 0 8px 0;color:var(--text)}
+    ul{padding-left:20px;margin:0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,251,252,0.98));padding:14px;border-radius:6px}
+    .skills-list{display:flex;flex-direction:column;gap:8px}
+    .skill{
+      display:flex;flex-direction:column;gap:4px;
+    }
+    .skill .label{display:flex;justify-content:space-between;font-size:0.9rem;color:var(--muted)}
+    .bar{height:8px;background:#e6eef6;border-radius:6px;overflow:hidden}
+    .bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent), #5aa9e6)}
+    .projects-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media (max-width:720px){ .projects-list{grid-template-columns:1fr} }
+    .project{
+      display:flex;gap:10px;align-items:flex-start;padding:8px;border-radius:6px;background:#fbfdff;border:1px solid #eef6fb;
+    }
+    .project .thumb{width:72px;height:48px;background:#e6f2fb;border-radius:6px;flex:0 0 72px;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
+    .job-title{font-weight:600;color:var(--accent)}
+    .job-details{font-size:0.9rem;color:var(--muted);font-style:italic;margin-bottom:8px}
+    .footer{text-align:center;font-size:0.8rem;color:#9aa3ad;margin-top:20px}
+    a.inline{color:var(--accent);text-decoration:none}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:6px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none}
+    .btn.secondary{background:#e6eef6;color:var(--accent);border:1px solid #d5e8f8}
+    .contact-form input,.contact-form textarea{width:100%;padding:8px;border:1px solid #d5dbe0;border-radius:6px;margin-bottom:8px;font-family:inherit}
+    .meta {font-size:0.85rem;color:var(--muted)}
+    /* Print styles: hide interactive UI and colors for crisp PDF */
+    @media print{
+      body *{visibility:visible}
+      .actions, .skip-link, .contact-form button, .btn.secondary, .footer {display:none}
+      .container{box-shadow:none;border-radius:0;padding:0}
+      .two-col{grid-template-columns:1fr 320px}
+      a::after {content: " (" attr(href) ")";}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main" class="container" role="main" aria-labelledby="name-heading">
+    <header>
+      <div class="avatar" aria-hidden="true">AS</div>
+      <div class="info">
+        <h1 id="name-heading" class="name">Abbot Sambulo Mtongana</h1>
+        <p class="tagline">AI Software Developer — Web & automation-focused; transitioning from IT & operations</p>
+        <p class="contact">
+          Johannesburg, South Africa • <a class="inline" href="tel:+27766570772">076 657 0772</a> •
+          <a class="inline" href="mailto:sammtongana@gmail.com">sammtongana@gmail.com</a> •
+          <a class="inline" href="https://github.com/Abbott2731" target="_blank" rel="noopener noreferrer">GitHub</a> •
+          <a class="inline" href="https://www.linkedin.com/in/REPLACE-LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </p>
+
+        <div class="actions" aria-hidden="false">
+          <!-- Print button and PDF link (upload resume.pdf to repo) -->
+          <a class="btn" href="#" onclick="window.print();return false">Print / Save PDF</a>
+          <a class="btn secondary" href="resume.pdf" download>Download PDF</a>
+          <a class="btn secondary" href="https://github.com/Abbott2731" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="two-col" role="region" aria-label="Resume content">
+      <section class="card" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Professional Summary</h2>
+        <p>Adaptable and resourceful professional transitioning into tech as an AI Software Developer. Hands-on with web development, AI experimentation, and digital branding. Strong foundation in business processes, PC engineering, and delivering reliable solutions under pressure. Seeking junior/mid-level roles where I can contribute to AI-driven projects and grow into production engineering and ML model deployment.</p>
+
+        <h2>Core Skills</h2>
+        <div class="skills-list" aria-label="Core skills">
+          <div class="skill">
+            <div class="label"><span>HTML / CSS / JS</span><span class="meta">75%</span></div>
+            <div class="bar" aria-hidden="true"><span style="width:75%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="label"><span>Python (AI/ML basics)</span><span class="meta">60%</span></div>
+            <div class="bar"><span style="width:60%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="label"><span>Prompt engineering & AI tools</span><span class="meta">70%</span></div>
+            <div class="bar"><span style="width:70%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="label"><span>IT / Networking</span><span class="meta">65%</span></div>
+            <div class="bar"><span style="width:65%"></span></div>
+          </div>
+        </div>
+
+        <h2 style="margin-top:12px">Education</h2>
+        <p><strong>Birnam Business College</strong> — Diploma in Business, PC Engineering & IT Networking (2021)</p>
+        <p><strong>Mahlasedi High School</strong> — Matriculation (2016)</p>
+
+        <h2 style="margin-top:12px">Certifications</h2>
+        <ul>
+          <li>Introduction to Machine Learning (Replace with actual cert) — Provider (Year)</li>
+          <li>Web Development / JavaScript course — Provider (Year)</li>
+        </ul>
+      </section>
+
+      <aside class="card" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional Experience</h2>
+
+        <div>
+          <p class="job-title">Cash Clerk / Machine Operator</p>
+          <p class="job-details">BETXchange — Johannesburg | 01 Dec 2022 – 16 Oct 2025</p>
+          <ul>
+            <li>Managed high-volume cash transactions with accuracy and accountability.</li>
+            <li>Operated and maintained betting machines; performed minor technical troubleshooting.</li>
+            <li>Introduced small process improvements to reduce downtime and improve reconciliation speed.</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:10px">
+          <p class="job-title">Field Worker</p>
+          <p class="job-details">Stats SA — Johannesburg | Mar – Apr 2022</p>
+          <ul>
+            <li>Conducted door-to-door data collection for national census with strong attention to accuracy.</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:10px">
+          <p class="job-title">Casual Worker</p>
+          <p class="job-details">Multiflora — Johannesburg | Jan – Dec 2020</p>
+          <ul>
+            <li>Supported cleaning and maintenance tasks; assisted supervisors to maintain operational efficiency.</li>
+          </ul>
+        </div>
+
+        <h2 style="margin-top:12px">Languages</h2>
+        <ul>
+          <li>English — Fluent</li>
+          <li>isiZulu / isiXhosa — Conversational</li>
+        </ul>
+
+        <h2 style="margin-top:12px">Availability</h2>
+        <p class="meta">Open to remote or Johannesburg-based roles — available to start with notice.</p>
+      </aside>
+    </div>
+
+    <section class="card" aria-labelledby="projects-heading" style="margin-top:16px">
+      <h2 id="projects-heading">Projects & Tech Initiatives</h2>
+      <div class="projects-list" role="list">
+        <article class="project" role="listitem">
+          <div class="thumb" aria-hidden="true">AS</div>
+          <div>
+            <strong>Abbott Solution (Pty) Ltd</strong>
+            <p class="meta">Founder — Building AI-driven solutions, automation workflows, and branding tools.</p>
+            <p style="margin-top:6px"><a href="https://example.com/project1" target="_blank" rel="noopener">View project</a> — Technologies: Python, Flask, simple ML models, prompt workflows</p>
+          </div>
+        </article>
+
+        <article class="project" role="listitem">
+          <div class="thumb" aria-hidden="true">GH</div>
+          <div>
+            <strong>GitHub Portfolio</strong>
+            <p class="meta">Interactive web projects showing AI integrations and responsive design.</p>
+            <p style="margin-top:6px"><a href="https://github.com/Abbott2731" target="_blank" rel="noopener">Explore repos</a></p>
+          </div>
+        </article>
+
+        <article class="project" role="listitem">
+          <div class="thumb" aria-hidden="true">DD</div>
+          <div>
+            <strong>Creative Digital Work</strong>
+            <p class="meta">YouTube banners, glitch effects, and custom digital assets for clients.</p>
+            <p style="margin-top:6px"><a href="https://example.com/creative" target="_blank" rel="noopener">View samples</a></p>
+          </div>
+        </article>
+
+        <article class="project" role="listitem">
+          <div class="thumb" aria-hidden="true">ML</div>
+          <div>
+            <strong>AI experimentation</strong>
+            <p class="meta">Prompt engineering, automated content generation, small model pipelines.</p>
+            <p style="margin-top:6px"><a href="https://example.com/ai-notes" target="_blank" rel="noopener">Notes & demos</a></p>
+          </div>
+        </article>
+      </div>
+      <p style="margin-top:10px" class="meta">Tip: Add 1–2 short case studies (problem → approach → result) with links or screenshots for your top projects.</p>
+    </section>
+
+    <section class="card" aria-labelledby="contact-heading" style="margin-top:12px">
+      <h2 id="contact-heading">Contact</h2>
+      <p class="meta">Prefer email or LinkedIn for professional inquiries. If you'd like to contact me directly, use the form below or email <a href="mailto:sammtongana@gmail.com">sammtongana@gmail.com</a>.</p>
+
+      <!-- Example contact form (replace action with Formspree endpoint or use Netlify Forms) -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Your name" />
+        <label for="email">Email</label>
+        <input id="email" name="_replyto" type="email" required placeholder="you@example.com" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Short message or inquiry"></textarea>
+        <!-- Use a spam-prevention hidden input if needed -->
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section style="margin-top:12px">
+      <h2>References</h2>
+      <p>Available upon request.</p>
+    </section>
+
+    <div class="footer" role="contentinfo">
+      <p>© 2024 Abbot Sambulo Mtongana</p>
+    </div>
+  </main>
+</body>
+</html>
